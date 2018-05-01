@@ -5,7 +5,7 @@ require 'database/ConnectToADatabase.php';
 
 $query = $pdo->prepare('select * from users');
 $query->execute();
-$results = $query->fetchAll();
+$results = $query->fetchAll(PDO::FETCH_OBJ);
 echo '<pre>', var_dump($results), '</pre>';
 
 
