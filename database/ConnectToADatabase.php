@@ -2,9 +2,10 @@
 
 try {
 
-  $pdo = new PDO('mysql:host=localhost;dbname=learning', 'root', '');
+  $pdo = new PDO('mysql:host=localhost;dbname=learnings', 'root', '');
 
 } catch (PDOException $e) {
-  // var_dump($e);
-  die('Could not connect to a database. Please try again.');
+
+  die($e->getMessage() . "<br>" . 'Could not connect to a database. Please try again.');
+
 }
