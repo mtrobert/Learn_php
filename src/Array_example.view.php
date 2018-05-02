@@ -12,11 +12,23 @@
 </head>
 
 <body>
-  <header><strong>Array Example</strong><br/></header>
-  <ul>
-    <?php foreach ($person as $key => $value) :?>
-      <li><strong><?= $key ?></strong><?= ' => ' .  $value ?>
-    <?php endforeach;?>
-  </ul>
+  <div class="Example">
+    <header><strong>Array Example</strong><br/></header>
+    <ul>
+      <?php foreach ($person as $key => $value) :?>
+        <li><strong><?= $key ?></strong><?= ' => ' .  $value ?>
+        <?php endforeach;?>
+    </ul>
+  </div>
+  <div class="Example">
+    <header><strong>Database Example</strong><br/></header>
+    <?php foreach ($users as $key => $value) :?>
+      <h2><?= $value->name;?></h2>
+    <ul>
+        <li><?= $value->age; ?></li>
+        <li><?= $value->learning; ?></li>
+    </ul>
+  <?php endforeach;?>
+  </div>
 </body>
 </html>
