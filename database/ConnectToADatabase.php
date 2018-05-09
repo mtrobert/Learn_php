@@ -1,11 +1,13 @@
 <?php
 
-try {
+function ConnectToADatabase(){
+  try {
 
-  $pdo = new PDO('mysql:host=localhost;dbname=learning', 'root', '');
+    return $pdo = new PDO('mysql:host=localhost;dbname=learning', 'root', '');
 
-} catch (PDOException $e) {
+  } catch (PDOException $e) {
 
-  die($e->getMessage() . "</br></br>" . 'Could not connect to a database. Please try again.');
+    die($e->getMessage() . "</br></br>" . 'Could not connect to a database. Please try again.');
 
+  }
 }
