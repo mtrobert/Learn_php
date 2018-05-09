@@ -22,11 +22,11 @@
   </div>
   <div class="Example">
     <header><strong>Database Example</strong><br/></header>
-    <?php foreach ($users as $key => $value) :?>
-      <h2><?= $value->name;?></h2>
+    <?php foreach ($users as $key => $user) :?>
+      <h2><?= $user->getName();?></h2>
     <ul>
-        <li><?= $value->age; ?></li>
-        <li><?= $value->learning; ?></li>
+        <li><?= $user->getAge(); ?></li>
+        <li><?= $user->getLearning(); ?></li>
     </ul>
   <?php endforeach;?>
   </div>
