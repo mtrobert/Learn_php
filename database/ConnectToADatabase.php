@@ -1,13 +1,19 @@
 <?php
+/**
+ *Class to connect to a database
+ */
+class ConnectToADatabase
+{
 
-function ConnectToADatabase(){
-  try {
+  public static function ConnectToDb(){           //static method for easy access 
+    try {
 
-    return $pdo = new PDO('mysql:host=localhost;dbname=learning', 'root', '');
+      return $pdo = new PDO('mysql:host=localhost;dbname=learning', 'root', '');
 
-  } catch (PDOException $e) {
+    } catch (PDOException $e) {
 
-    die($e->getMessage() . "</br></br>" . 'Could not connect to a database. Please try again.');
+      die($e->getMessage() . "</br></br>" . 'Could not connect to a database. Please try again.');
 
+    }
   }
 }
