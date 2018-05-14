@@ -1,11 +1,11 @@
 <?php
 /**
- *Class to connect to a database
+ *Class to connect to a database and return PDO object
  */
 class ConnectToADatabase
 {
 
-  public static function ConnectToDb(){           //static method for easy access 
+  public static function ConnectToDb(){           //static method for easy access
     try {
 
       return $pdo = new PDO('mysql:host=localhost;dbname=learning', 'root', '');
