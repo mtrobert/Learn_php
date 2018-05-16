@@ -1,18 +1,16 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'database/ConnectToADatabase.php';
-
-$query = $pdo->prepare('select * from users');
-$query->execute();
-$results = $query->fetchAll(PDO::FETCH_OBJ);
-echo '<pre>', var_dump($results), '</pre>';
+$query = require 'core/bootstrap.php';
+require 'users/User.php';
 
 
+$users = $query->selectAll('users', 'user');
 
-// $name = 'Jonathan';  //data from a off-class
-// $age = 44;  //data from a off-class
-// $learning = true;  //data from a off-class
+// echo '<pre>', var_dump($users), '</pre>';
+
+
+
 
 $futureEmployee = new src\Array_example();
 $futureEmployee->addName();
@@ -21,4 +19,4 @@ $futureEmployee->addLearning();
 
 $person = $futureEmployee->returnPerson();
 
-require 'src/Array_example.view.php';
+require 'views/Array_example.view.php';
