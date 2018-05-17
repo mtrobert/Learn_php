@@ -1,4 +1,11 @@
- <!DOCTYPE html>
+<?php
+
+  require 'users/User.php';
+  $query = require 'core/bootstrap.php';
+  $users = $query->selectAll('users', 'User');
+
+?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Example</title>
@@ -7,13 +14,12 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
     <body>
-
-      <?php
-
-        $users = $query->selectAll('users', 'user');
-        require 'views/Database_example.view.php';
-
-      ?>
+      <div class="navbar">
+        <a href="index.php" class="navitem">Home</a>
+        <a href="contact.php" class="navitem">Contact</a>
+        <a href="about.php" class="navitem">About Us</a>
+      </div>
+      <?php require 'views/Database_example.view.php'; ?>
 
     </body>
 </html>
