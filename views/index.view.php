@@ -16,8 +16,8 @@
     <body>
       <div class="navbar">
         <a href="index.php" class="navitem">Home</a>
-        <a href="contact.php" class="navitem">Contact</a>
-        <a href="about.php" class="navitem">About Us</a>
+        <a href="views/contact.view.php" class="navitem">Contact</a>
+        <a href="views/about.view.php" class="navitem">About Us</a>
       </div>
       <?php require 'views/Database_example.view.php'; ?>
 
