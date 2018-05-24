@@ -2,4 +2,4 @@
 
 require 'vendor/autoload.php';
 
-require 'views/index.view.php';
+require 'controllers/index.php';

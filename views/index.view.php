@@ -1,10 +1,3 @@
-<?php
-
-  require 'users/User.php';
-  $query = require 'core/bootstrap.php';
-  $users = $query->selectAll('users', 'User');
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
