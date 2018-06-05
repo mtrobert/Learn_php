@@ -8,9 +8,9 @@
   </head>
     <body>
       <div class="navbar">
-        <a href="index.php" class="navitem">Home</a>
-        <a href="views/contact.view.php" class="navitem">Contact</a>
-        <a href="views/about.view.php" class="navitem">About Us</a>
+        <a href="/php/learn_php/" class="navitem">Home</a>
+        <a href="/php/learn_php/contact" class="navitem">Contact</a>
+        <a href="/php/learn_php/about" class="navitem">About Us</a>
       </div>
       <?php require 'views/Database_example.view.php'; ?>
 
