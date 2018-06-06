@@ -19,7 +19,16 @@ class Post
 
 }
 
+$posts = [
 
+  new Post('First post', true),
+  new Post('Second post', true),
+  new Post('Third post', true),
+  new Post('Fourth post', false)
+
+];
+
+var_dump($posts);
 
 
 
