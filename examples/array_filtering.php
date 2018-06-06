@@ -2,14 +2,14 @@
 /*******************************************************************
 ****************** EXAMPLE 1 - array_filter() **********************
 *******************************************************************/
-echo "\n" . '******************' . 'Example 1 - array_filter()' . '*********************' . "\n";
+echo "\n" . '******************' . 'Example 1 - array_filter()' . '*********************' . "\n" . "\n";
 /**********************************************************************************************/
 
 
 class Post
 {
 
-  protected $title, $published;
+  public $title, $published;
 
   public function __construct($title,$published)
   {
@@ -20,19 +20,33 @@ class Post
 }
 
 $posts = [
-
   new Post('First post', true),
   new Post('Second post', true),
   new Post('Third post', true),
   new Post('Fourth post', false)
-
 ];
 
-var_dump($posts);
+
+echo 'Here is unpublished posts for you boss :) .' ."\n" . "\n";
+
+$unpublished = array_filter($posts , function($post)
+                    {
+                      return !$post->published;
+                    }
+);
+var_dump($unpublished);
 
 
 
+echo "\n" . 'Here is published posts for you boss :) .' ."\n" . "\n";
 
+$published = array_filter($posts , function($post)
+                    {
+                      return $post->published;
+                    }
+);
+
+var_dump($published);
 
 
 
