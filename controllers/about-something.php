@@ -1,5 +1,5 @@
 <?php
 
-require '../views/about-something.view.php';
+require 'views/about-something.view.php';
 
 ?>
