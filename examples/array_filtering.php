@@ -11,19 +11,20 @@ class Post
 
   public $title, $published;
 
-  public function __construct($title,$published)
+  public function __construct($title, $author, $published)
   {
     $this->title = $title;
+    $this->author = $author;
     $this->published = $published;
   }
 
 }
 
 $posts = [
-  new Post('First post', true),
-  new Post('Second post', true),
-  new Post('Third post', true),
-  new Post('Fourth post', false)
+  new Post('First post', 'RM',  true),
+  new Post('Second post', 'IJ',  true),
+  new Post('Third post', 'LM',  true),
+  new Post('Fourth post', 'DM',  false)
 ];
 
 
@@ -67,20 +68,12 @@ var_dump($modified);
 
 
 
-
-
-
-
-
-
-
 echo "\n" . '******************' . 'End of an example ' . '*********************' . "\n";
 /*******************************************************************
 ****************** EXAMPLE 3 - array_column() **********************
 *******************************************************************/
 echo "\n" . '******************' . 'Example 3 - array_column()' . '*********************' . "\n";
 /****************************************************************************************/
-
 
 
 
