@@ -4,7 +4,10 @@
  */
 class Router
 {
-  protected $routes = [];
+  protected $routes = [
+    'get' => [],
+    'post' => []
+  ];
 
   public function define($routes)
   {
