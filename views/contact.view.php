@@ -2,7 +2,7 @@
 
     <h1>CONTACT US</h1>
 
-    <form method="GET" action="names">
+    <form method="POST" action="names">
       Name: <input type="text" name="name"></br>
       Last Name: <input type="text" name="last_name"></br>
       Age: <input type="text" name="age"></br>
@@ -10,7 +10,7 @@
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </select>
-      <button type="submit">Submit</button>
+      <button type="submit">Add to a database</button>
     </form>
 
 <?php require 'partials/footer.php'; ?>
