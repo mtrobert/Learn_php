@@ -7,9 +7,9 @@
 
 $query->insert('users', [
 
-    'name' => $_POST['name'],
+    'name' => $_POST['name'] . ' ' .  $_POST['last_name'],
     'age' => $_POST['age'],
-    'learning' => $_POST['learning']
+    'learning' => $_POST['learning'],
 
 ]);
 
