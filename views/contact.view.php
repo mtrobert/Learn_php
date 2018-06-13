@@ -7,8 +7,8 @@
       Last Name: <input type="text" name="last_name"></br>
       Age: <input type="text" name="age"></br>
       Learning: <select name="learning">
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
+                  <option value=1>Yes</option>
+                  <option value=0>No</option>
                 </select>
       <button type="submit">Add to a database</button>
     </form>
