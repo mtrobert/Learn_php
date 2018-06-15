@@ -2,7 +2,9 @@
 
 
   require 'users/User.php';
-  $query = require 'core/bootstrap.php';
+  require 'core/bootstrap.php';
+  $query = App::get('database');
+  // die(var_dump($query));
   $users = $query->selectAll('users', 'User');
 
 
