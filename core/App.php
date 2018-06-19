@@ -2,6 +2,9 @@
 /**
  * Dependancy injection container
  */
+
+namespace App\Core;
+
 class App
 {
 

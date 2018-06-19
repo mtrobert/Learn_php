@@ -1,10 +1,12 @@
 <?php
 
+  use App\Core\App;  
+  use App\Users\User;
 
-  require 'users/User.php';
   require 'core/bootstrap.php';
+
   $query = App::get('database');
-  // die(var_dump($query));
+
   $users = $query->selectAll('users', 'User');
 
 

@@ -2,6 +2,10 @@
 /**
  * class for bulding diffrent types of queries
  */
+
+namespace App\Database;
+use \PDO;
+
 class QuerieBuilder
 {
 

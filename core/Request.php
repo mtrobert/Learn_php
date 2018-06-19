@@ -2,6 +2,9 @@
 /**
  * Class to fetch current browser requests
  */
+
+namespace App\Core;
+
 class Request
 {
 

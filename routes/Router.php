@@ -2,6 +2,9 @@
 /**
  *
  */
+
+namespace App\Routes;
+
 class Router
 {
   protected $routes = [

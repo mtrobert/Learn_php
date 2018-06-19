@@ -2,6 +2,10 @@
 /**
  *Class to connect to a database and return PDO object
  */
+
+namespace App\Database;
+use \PDO;
+
 class ConnectToADatabase
 {
 

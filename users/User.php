@@ -3,6 +3,7 @@
 /**
  * Class containing methods and properties for a user
  */
+
 class User
 {
   protected $name, $age, $learning, $id;
